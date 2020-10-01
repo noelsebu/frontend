@@ -1,0 +1,15 @@
+<p>{{ name }} 's house number {{ homeId }}  and  {{ getAddress() }} </p>
+<p>{{ message }}</p>
+<label>Hello</label>
+<input type ="text" class="form-button" [(ngModel)]='home'> 
+<p [ngStyle]="{backgroundColor: getColor()}"> {{ home }}</p>
+<button class="btn btn-primary" [disabled]="!addButton" (click)="onClick()">Add Address</button>
+
+<hr>
+<label>Username: </label>
+<input type="text" class="form-button" [(ngModel)]='username'> 
+<button class="btn btn-primary" (click)="onUser()">Sumbit</button>
+<p *ngIf="status ; else noUser; ">{{ onUser() }}</p>
+ <ng-template #noUser>
+    <p>No user has been created</p>
+</ng-template> 

@@ -1,0 +1,29 @@
+<br>
+<mat-card>
+<div *ngIf="hero">
+
+    <mat-card-title>{{hero.name | uppercase}} Details</mat-card-title>
+    <mat-divider></mat-divider>
+    <br>
+    <br>
+    <div><span matBadge="{{hero.id}}" matBadgeOverlap="false"></span></div>
+    <div>
+
+      <!-- <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label> -->
+
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="hero.name" placeholder="Name">
+          
+        </mat-form-field>
+      </p>
+    </div>
+    <button mat-raised-button color="primary" (click)="goBack()">Go back</button>
+
+    <button mat-raised-button color="primary" (click)="save()">save</button>
+  
+  </div>
+</mat-card>

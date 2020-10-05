@@ -7,6 +7,33 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-home></app-home>
+<!-- <<app-home></app-home> -->
+<mat-toolbar color="primary">
+  <span>Tour of heroes application</span>
+</mat-toolbar>
+<mat-card>
+<nav>
+
+  <div>
+  <span>
+  <button mat-raised-button color="accent" style='margin-right:16px'>
+  <a routerLink="/dashboard">Dashboard</a>
+  </button>
+  </span>
+
+  <span>
+  <button mat-raised-button color="accent">
+  <a routerLink="/heroes" class="b1">Heroes</a>
+  </button>
+  </span>
+  </div>
+
+
+</nav>
+
+
 
 <router-outlet></router-outlet>
+</mat-card>
+
+<!-- <app-messages></app-messages> -->

@@ -14,6 +14,7 @@ import { MessageService } from '../../services/message.service';
 export class HeroesComponent implements OnInit {
 
  heroes: Hero[];
+ selected = true;
  
 
 
